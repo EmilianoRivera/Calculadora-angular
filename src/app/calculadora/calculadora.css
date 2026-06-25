@@ -1,0 +1,63 @@
+/* Caja principal de la calculadora */
+.mi-calculadora {
+  background-color: white;
+  width: 280px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* La pantalla blanca con borde gris */
+.pantalla-simple {
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 24px;
+  text-align: right;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+/* Los bloques de cada fila */
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Estilo para TODOS los botones en general */
+button {
+  width: 60px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e6eaf0;
+  color: #333;
+  cursor: pointer;
+}
+
+/* El botón de borrar (C) que ocupa todo el ancho */
+.boton-borrar {
+  width: 100%;
+  background-color: #ffb3b3; /* Rojo pastel */
+  color: #d32f2f;
+}
+
+/* Los botones de operación (+, -, *, /) */
+.boton-operador {
+  background-color: #ffe0b2; /* Naranja pastel */
+  color: #f57c00;
+}
+
+/* El botón de igual (=) */
+.boton-igual {
+  background-color: #c8e6c9; /* Verde pastel */
+  color: #388e3c;
+}
+
+/* Efecto cuando pasas el ratón por encima */
+button:hover {
+  filter: brightness(0.9);
+}

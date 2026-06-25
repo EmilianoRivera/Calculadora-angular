@@ -1,0 +1,45 @@
+<div class="mi-calculadora">
+
+  <!-- La pantalla donde se ve el número -->
+  <div class="pantalla-simple">
+    {{ pantalla }}
+  </div>
+
+  <!-- Fila de control principal -->
+  <div class="fila">
+    <button (click)="limpiar()" class="boton-borrar">C</button>
+  </div>
+
+  <!-- Fila de números 7, 8, 9 y división -->
+  <div class="fila">
+    <button (click)="agregarNumero('7')">7</button>
+    <button (click)="agregarNumero('8')">8</button>
+    <button (click)="agregarNumero('9')">9</button>
+    <button (click)="seleccionarOperacion('/')" class="boton-operador">/</button>
+  </div>
+
+  <!-- Fila de números 4, 5, 6 y multiplicación -->
+  <div class="fila">
+    <button (click)="agregarNumero('4')">4</button>
+    <button (click)="agregarNumero('5')">5</button>
+    <button (click)="agregarNumero('6')">6</button>
+    <button (click)="seleccionarOperacion('*')" class="boton-operador">*</button>
+  </div>
+
+  <!-- Fila de números 1, 2, 3 y resta -->
+  <div class="fila">
+    <button (click)="agregarNumero('1')">1</button>
+    <button (click)="agregarNumero('2')">2</button>
+    <button (click)="agregarNumero('3')">3</button>
+    <button (click)="seleccionarOperacion('-')" class="boton-operador">-</button>
+  </div>
+
+  <!-- Fila de 0, punto, igual y suma -->
+  <div class="fila">
+    <button (click)="agregarNumero('0')">0</button>
+    <button (click)="agregarDecimal()">.</button>
+    <button (click)="calcular()" class="boton-igual">=</button>
+    <button (click)="seleccionarOperacion('+')" class="boton-operador">+</button>
+  </div>
+
+</div>
